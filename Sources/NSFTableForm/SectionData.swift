@@ -8,8 +8,8 @@
 import Foundation
 
 public struct SectionData {
-    init(cells: [CellData] = []) {
+    public init(cells: [CellData] = []) {
         self.cells = cells
     }
-    let cells: [CellData]
+    public let cells: [CellData]
 }
