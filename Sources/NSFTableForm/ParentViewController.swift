@@ -11,6 +11,14 @@ open class ParentViewController: UIViewController {
 
     public typealias VoidClosure = () -> ()
 
+    public init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required public init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+
     public lazy var reloadDataClosure: VoidClosure = { [weak self] in
         self?.tableView.reloadData()
     }
